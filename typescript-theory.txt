@@ -1,0 +1,69 @@
+------------- Typescript----------------------------------
+- typescript
+  - sometimes if its not even set the type, typescript infers the default data types
+
+- Typescript Error:
+  - syntax error
+  - type errors
+
+- ysconfig.json -------------------------------
+- npm install -D @types/node
+  - necessary if the project is built on node
+
+- Other Outputs
+  - later
+
+- isolate module
+
+- File Layout
+  - rootyDir : ./src
+    - will check which folder contains Typescript. will go to root. so Typescript written in src will be watched by it.
+
+  - outDir: ./dist 
+    - distribute folder. will create the dist folder. after compile will put it in dist folder.
+
+  - dist File
+    - index.ts 
+      - declaration File
+
+    - index.jsx
+      - use strict is  set to true
+
+- type anotation:
+  - do as the type is declared
+- type inference
+  - typescript decides based on devs behavior
+
+- package.json for typescript
+  - (what is package json for typescript_why needed -googless) and pdf
+
+--------------------------------CHAI AUR CODE Typescript------------------------------------------------
+- @types/node /react
+  - if node/react used with typescript.
+
+  - provides type definitions for Node.js's built-in APIs — things like fs, path, http, process, Buffer, etc. TypeScript doesn't know the shapes of these APIs on its own, since Node.js itself is written in plain JavaScript with no types built in.
+
+  Why you need it
+
+  Without @types/node, TypeScript treats Node's globals and built-in modules as unknown or any, and you'll get errors like:
+
+  Cannot find module 'fs' or its corresponding type declarations.
+  Cannot find name 'process'.
+
+
+  - npx tsc --init
+    - gives tsconfig.json
+    - typescript project initialize
+
+
+
+- target??
+  - default best option
+
+
+- package.json  
+  - scripts:
+    - start: node dist/index.js 
+      to use the command
+    - dev: "npx tsc" /npx ts-node
+
